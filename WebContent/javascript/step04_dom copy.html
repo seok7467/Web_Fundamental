@@ -1,0 +1,32 @@
+<!--step04_dom.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+
+    <!-- 원래는 body객체 생성 후 코딩작성해야 함 -->
+<script>
+    window.onload = function(){ //페이지 다 뜨고 실행
+    // const h1 = document.createElement("h1");
+    // const textNode = document.createTextNode("Hello H1");
+    // h1.appendChild(textNode);
+    // document.body.appendChild(h1);
+
+    const img = document.createElement("img");
+    img.src = "../css/1.png";
+    img.width = 500;
+    img.height=500;
+    document.body.appendChild(img);
+    }
+</script>
+    
+</head>
+<body>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,90 @@
+<!--step01_var.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        //한줄 주석
+        /*
+        여러줄 주석
+        */
+        //숫자 선언 방법
+        var num1 = 9999;
+        var num1 = 1000; //var은 이중 선언 가능
+
+        console.log(num1);
+        //문자열 선언하는 방법
+        var myName = '캐리야';
+        var yourName = "챠내바";
+        var multiName = `
+        가가가가가가 ㄴㅁㄴㅇ
+        ㄴㅁㅇ
+        ㄴㅁ
+        ㅇㄴㅁ
+        ㅇㄴ
+
+        ㅏ나나나나나난`; //es6에서 추가된 문자열 표기법
+        console.log(multiName);
+
+        var test;
+
+        //자료형 확인
+        console.log(typeof test);
+        console.log(typeof num1);
+        console.log(typeof myName);
+        
+        console.log(typeof ourName);
+
+        var ourName="kpc" //variable hoisting
+
+        console.log(typeof ourName);
+
+        foo();
+        function foo(){  //function hoisting 
+            console.log('function foo()');
+        }
+
+        // let a1= 1000;
+        // // let a1 = 1001; 
+        // console.log(a1); //let변수는 이중선언 안됨
+
+        // console.log(a2); //let변수는 hoisting 안됨
+        // let a2=100;
+
+        var b1=10;
+        console.log('b1=',b1);
+        if(true){
+            var b1=20;
+            console.log('b1=',b1);
+        }
+        console.log('b1=',b1);
+
+        let c1 = 10;
+        console.log('c1=',c1);
+        if(true){
+            let c1 = 20;
+            console.log('c1=',c1);
+        }
+        console.log('c1=',c1);
+
+        const d1 =10;
+        // d1 =30; //const primitive 타입일 때 수정 불가
+
+        const e1 = [1,2];
+        e1.push(3); //const는 complex type일 때는 객체 구성 변경 가능
+        console.log('e1=',e1);
+
+        //1. primitive type => let
+        //2. primitive type 중에서 상수가 필요할 때는 const
+        //3. complex type =>const
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

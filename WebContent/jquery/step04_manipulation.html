@@ -1,0 +1,58 @@
+<!--step04_manipulation.html-->
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $('p').prepend('<strong> Hi </strong>'); //이거 많이 씀
+            // $('<strong> Hi </strong>').prependTo('p'); //굳이 이걸 쓰지 않음
+
+            // $('p').append('<strong> Hi </strong>');
+            // $('<strong> Hi </strong>').appendTo('p'); //굳이 이걸 쓰지 않음
+
+            // $('p').after('<strong>HI</strong>');
+            // $('p').before('<strong>HI</strong>');
+
+            // $('p').text('<strong>제이쿼리</strong>');
+            // $('p').html('<strong>제이쿼리</strong>');
+
+            // let msg1=$('p').html();
+            // let msg2=$('p').text();
+            // console.log(msg1);
+            // console.log(msg2);
+            // $('p').wrap('<div/>');
+
+            // $('p').remove();
+            // $('p').detach();
+            $('#aa').empty();  //이걸 많이 씀
+
+
+
+        });
+    </script>
+    <style>
+        div {
+            border: 1px solid blue;
+        }
+
+        p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+    <div id="aa">
+        <div>M</div>
+    </div>
+    </p>
+
+
+</body>
+
+</html>
